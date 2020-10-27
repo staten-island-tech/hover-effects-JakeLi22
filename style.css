@@ -16,7 +16,7 @@
           box-shadow: 0 5px 0.5rem black;
 }
 
-btn:hover {
+.btn:hover {
   -webkit-transform: translateY(5px);
           transform: translateY(5px);
 }
@@ -78,6 +78,27 @@ btn:hover {
   transform: scale(0.1, 1);
 }
 */
+.rotate {
+  height: 20rem;
+  position: relative;
+}
+
+.rotate-watch {
+  height: 20rem;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.rotate-header {
+  font-size: 6rem;
+  letter-spacing: 0.4rem;
+  position: absolute;
+  top: 100%;
+  left: 100%;
+}
+
 .container {
   width: 80vw;
   margin: 2rem auto;

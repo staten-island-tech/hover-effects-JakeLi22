@@ -1,0 +1,19 @@
+.rotate {
+  height: 20rem;
+  position: relative;
+}
+
+.rotate-watch {
+  height: 20rem;
+  clip-path: circle();
+  transition: all 0.3s;
+}
+
+.rotate-header {
+  font-size: 6rem;
+  letter-spacing: 0.4rem;
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  //opacity:0;
+}
