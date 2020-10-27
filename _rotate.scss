@@ -1,19 +1,28 @@
 .rotate {
-  height: 20rem;
+  height: 18rem;
   position: relative;
 }
 
 .rotate-watch {
   height: 20rem;
   clip-path: circle();
-  transition: all 0.3s;
+  transition: all 0.6s;
+  z-index: -1;
+  right: 10%;
+  &:hover {
+    filter: blur(2px);
+    transform: translateX(13rem) rotate(180deg);
+  }
 }
 
 .rotate-header {
   font-size: 6rem;
   letter-spacing: 0.4rem;
   position: absolute;
-  top: 100%;
-  left: 100%;
-  //opacity:0;
+  top: 10%;
+  left: 70%;
+  transition: all 0.6s;
+  opacity: 1;
+  z-index: 1;
+  color: white;
 }
