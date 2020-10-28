@@ -1,0 +1,18 @@
+.iphone {
+  height: 70vh;
+  z-index: -20;
+  position: relative;
+}
+
+img {
+  height: 70vh;
+  z-index: -20;
+}
+
+.iphone-text {
+  background-color: blue;
+  z-index: 10;
+  position: absolute;
+  padding: 10rem 4rem;
+  top: 100%;
+}
