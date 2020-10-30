@@ -1,12 +1,9 @@
 .iphone {
-  height: 70vh;
+  height: 80vh;
   z-index: -20;
   position: relative;
-}
-
-img {
-  height: 70vh;
-  z-index: -20;
+  background-image: url(./media/iphone.jpg);
+  background-color: blueviolet;
 }
 
 .iphone-text {
