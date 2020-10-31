@@ -1,15 +1,30 @@
 .iphone {
-  height: 80vh;
-  z-index: -20;
+  height: 20rem;
   position: relative;
-  background-image: url(./media/iphone.jpg);
-  background-color: blueviolet;
 }
 
+.iphone-image {
+  height: 20rem;
+  transition: all 0.6s;
+  z-index: -1;
+}
 .iphone-text {
-  background-color: blue;
-  z-index: 10;
   position: absolute;
-  padding: 10rem 4rem;
-  top: 100%;
+  z-index: 1;
+  background-color: white;
+  opacity: 0;
+  padding: 103.9px 32px;
+  right: 6.3%;
+  top: 4.9%;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: thin;
+  transition: all 0.4s;
+
+  &:hover {
+    opacity: 1;
+    transition: all 0.4s;
+    transition-timing-function: ease-out;
+    box-shadow: 0px 0px 10px 5px white;
+  }
 }
