@@ -161,6 +161,25 @@
           box-shadow: 0px 0px 10px 5px white;
 }
 
+.tennis-ball {
+  height: 25rem;
+  position: relative;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  overflow: hidden;
+}
+
+.ball-img {
+  height: 26rem;
+  -webkit-transition: all 1.3s ease-in;
+  transition: all 1.3s ease-in;
+}
+
+.ball-img:hover {
+  -webkit-transform: rotate(180deg) scale(1.4);
+          transform: rotate(180deg) scale(1.4);
+}
+
 .container {
   width: 80vw;
   margin: 2rem auto;
