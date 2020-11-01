@@ -12,10 +12,31 @@
   transition: all 0.3s;
   position: relative;
   box-shadow: 0 5px 0.5rem black;
-
+  overflow: hidden;
+  z-index: 1;
   &:hover {
-    transform: translateY(5px);
+    // background-color: white;
+    color: red;
   }
 
-  &: active;
+  &:active {
+    transform: translateY(5px);
+  }
+}
+
+.btn::before {
+  content: "";
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s;
+  width: 0;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn:hover::before {
+  width: 100%;
 }

@@ -14,11 +14,40 @@
   position: relative;
   -webkit-box-shadow: 0 5px 0.5rem black;
           box-shadow: 0 5px 0.5rem black;
+  overflow: hidden;
+  z-index: 1;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:link:hover,
+.btn:visited:hover {
+  color: red;
+}
+
+.btn:active,
+.btn:link:active,
+.btn:visited:active {
   -webkit-transform: translateY(5px);
           transform: translateY(5px);
+}
+
+.btn::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 0;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.btn:hover::before {
+  width: 100%;
 }
 
 .hover-text {
